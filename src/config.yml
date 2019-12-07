@@ -1,0 +1,56 @@
+Version: "1.0.0"
+#请勿更改,造成损失后果自负
+
+Update: true
+
+Event:
+  PlayerBreakBlock:
+    Enable: false
+    # true(允许),false(不允许)
+    ShowTips: true
+    # 当上面设置为false时,触发时是否提示消息
+    Tips: "&e不允许破坏方块"
+    # 当ShowTips设置为true时,触发此事件将提示此消息 (支持颜色代码&PAPI)
+  PlayerPlaceBlock:
+    Enable: false
+    ShowTips: true
+    Tips: "&e不允许放置方块"
+  CanPlayerHungry: false
+  #玩家是否能够降低饱满度
+  CanExplodeEvent: false
+  #爆炸能否破坏方块
+  CanChangeWeather: false
+  #能否更改天气
+  CanPlayerDrop: false
+  #
+  EnablePlayerPVP: false
+  #
+  CanPlayerPickup: false
+  #
+  EToEDamage: false
+  FrameProtect: true
+  CanDamageEvent: false
+VoidSpawn:
+  Enable: true
+  UseDefaultLocation: true
+  # 设置为true,使用玩家掉入虚空世界的出生点作为TP参数
+  # 设置为false,使用下方的location参数(如果没有设置仍将使用用世界默认出生点作为参数)
+  ShowTips: true
+  Tips: "&e已将您拉回"
+GameModeInJoin:
+  Enable: true
+  Gamemode: ADVENTURE
+JoinSpawn:
+  Enable: true
+  UseDefaultLocation: true
+  # 设置为true,使用此世界默认的出生点
+  # 设置为false,使用上文location中设置的地点
+location:
+  World: 'world'
+  X: 0
+  Y: 0
+  Z: 0
+  Pitch: 0.0
+  Yaw: 0.0
+EnableWorld:
+- test

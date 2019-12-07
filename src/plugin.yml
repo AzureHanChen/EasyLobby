@@ -1,0 +1,19 @@
+name: EasyLobby
+main: me.github.azurehanchen.EasyLobby
+version: 1.0.0
+author: AzureHanChen
+softdepend: [PlaceholderAPI]
+commands:
+  easylobby:
+permissions:
+    easylobby.admin:
+        default: op
+        children:
+            easylobby.admin.info: true
+            easylobby.admin.help: true
+            easylobby.admin.reload: true
+            easylobby.admin.setlobby: true
+            easylobby.event.placeblock: true
+            easylobby.event.breakblock: true
+            easylobby.admin.joinmode: true
+    
